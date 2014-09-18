@@ -55,36 +55,12 @@
   </head>
 
   <body>
-     <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="http://pca-gis02.pca.state.mn.us/ArcGIS/rest/services">Using ArcGIS for Server ReST API</a>
-        </div>
-      </div>
-    </div>
-	
-	<div class="container">
-	
-        <div class="span12">
-            <div class="row" id="options">
-			  <h1 id='big'>Wastewater Treatment Facilities</h1> 
-			  <h2 id='medium'>by the Minnesota Pollution Control Agency</h2>
-			    <div id="map" style="width: 600px; height: 400px">
-				</div>
-			  <br/>	
-			  <h2 id='big'>where facility_name LIKE '%WWTP%'</h2> 
-			  <br/>	
-			  <h3 id='big'>http://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/phosloads/MapServer/0/query?where=Facility_N+LIKE+%27%25WWTP%25%27...outFields=*</h3> 
-            </div>
-			<br/>
-			<h1 id='big'> list the results </h1>
-			<br/>
-			<div id="list" style="padding-left: 200px">
-				<ul id="sites"></ul>
-			</div>
-			
-		</div>
-	</div>
+  
+		<div id="map" style="width: 600px; height: 400px"> </div>
+	  <br/>	
+		<h2 id='big'>where facility_name LIKE '%WWTP%'</h2> 
+		<br/>	
+		<h3 id='big'>http://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/phosloads/MapServer/0/query?where=Facility_N+LIKE+%27%25WWTP%25%27...outFields=*</h3> 
   
 	<!-- jQuery -->  
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -137,7 +113,7 @@
 							+ " kg of phosphorus per year.</center>"
 						);
 					
-						$('#sites').append("<li>" + obj.features[i].attributes.Facility_N + "</li>"); 
+						 
 					};
 				};
 
