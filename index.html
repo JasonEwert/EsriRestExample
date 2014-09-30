@@ -79,8 +79,9 @@
 
 		$(document).ready(function (){
 
-		  var route = "http://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/phosloads/MapServer/0/query?where=Facility_N+LIKE+%27%25WWTP%25%27+&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&f=pjson"
-
+		  //var route = "http://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/phosloads/MapServer/0/query?where=Facility_N+LIKE+%27%25WWTP%25%27+&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&f=pjson"
+		  var route = "http://pca-gis02.pca.state.mn.us/arcgis/rest/services/agol/phosloads/MapServer/0/query?where=Facility_N+LIKE+%27%25WWTP%25%27+&geometryType=esriGeometryEnvelope&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=true&outSR=4326&returnIdsOnly=false&returnCountOnly=false&returnZ=false&returnM=false&returnDistinctValues=false&f=pjson"
+			
 		  $.ajax({
 
 			type: 'GET',
