@@ -93,9 +93,9 @@
 				// create the map and add the stamen layers
 				// replace "toner" here with "terrain" or "watercolor"
 				var layer = 
-				    new L.StamenTileLayer("terrain");
-				    //L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				    //    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});
+				    //new L.StamenTileLayer("terrain");
+				    new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});
 				var map = new L.Map("map", {
 					center: new L.LatLng(44.819, -93.596),
 					zoom: 10
